@@ -1,32 +1,32 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application
-        android:label="Kazumi"
-        android:name="${applicationName}"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
-        android:icon="@mipmap/ic_launcher"
-        android:extractNativeLibs="true">
-        <meta-data
-             android:name="io.flutter.embedding.android.EnableImpeller"
-             android:value="false" 
+<表明xmlns:android="http://schemas.android.com/apk/res/android">
+    <应用
+        安卓：标签="动漫社"
+        安卓：名称="${applicationName}"
+        Android:usesClearTextTraffic="真"
+        没有任何的果.="真"
+        安卓：图标="@mipmap/ic_launcher"
+        Android:extractNativeLibs="真">
+        <元数据
+             安卓：名称="io.flutter.embedding.android.EnableImpeller"
+             安卓：值="假" 
         />
-        <!-- singleTask: links from other apps must not start a second activity
-             on the shared audio_service engine. -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:launchMode="singleTask"
-            android:supportsPictureInPicture="true"
-            android:resizeableActivity="true"
-            android:theme="@style/LaunchTheme"
-            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-            android:hardwareAccelerated="true"
-            android:windowSoftInputMode="adjustResize">
-            <!-- Specifies an Android theme to apply to this Activity as soon as
-                 the Android process has started. This theme is visible to the user
-                 while the Flutter UI initializes. After that, this theme continues
-                 to determine the Window background behind the Flutter UI. -->
-            <meta-data
+        <！--singleTask：来自其他应用程序的链接不能启动第二个活动
+在共享音频服务引擎上。-->
+        <活动
+            安卓：名称=".MainActivity"
+            android:exported="真"
+            Android：启动模式="singleTask"
+            安卓：支持PictureInPicture="真"
+            Android:resizeableActivity="真"
+            安卓：主题="@style/LaunchTheme"
+            没有任何变化="方向|keyboardHidden|keyboard|screenSize|minimestScreenSize|locale|layoutDirection|fontScale|screenLayout|密度|UIMode"
+            Android:hardwareAccelerated="真"
+            没有任何问题="adjustResize">
+            <！--指定要尽快应用于此“活动”的Android主题
+Android进程已启动。此主题对用户可见
+当Flutter UI初始化时。之后，此主题继续
+确定Flutter UI后面的窗口背景。-->
+            <元数据
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
