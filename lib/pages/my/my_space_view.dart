@@ -69,6 +69,22 @@ class _WideSpaceLayout extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         _AdaptivePair(
+          // --- 自定义的登录卡片（宽屏） ---
+Container(
+  margin: const EdgeInsets.only(bottom: 16),
+  decoration: BoxDecoration(
+    color: Theme.of(context).colorScheme.primaryContainer,
+    borderRadius: BorderRadius.circular(16),
+  ),
+  child: ListTile(
+    leading: const Icon(Icons.account_circle, size: 40),
+    title: const Text("点击登录账号", style: TextStyle(fontWeight: FontWeight.bold)),
+    subtitle: const Text("登录后可同步云端数据"),
+    trailing: const Icon(Icons.chevron_right),
+    onTap: () {},
+  ),
+),
+// --- 插入结束 ---
           gap: 20,
           first: const _SpaceHeading(),
           second: _WatchStatsPanel(
@@ -164,6 +180,22 @@ class _CompactSpaceLayout extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        // --- 自定义的登录卡片（手机布局） ---
+Container(
+  margin: const EdgeInsets.only(bottom: 16),
+  decoration: BoxDecoration(
+    color: Theme.of(context).colorScheme.primaryContainer,
+    borderRadius: BorderRadius.circular(16),
+  ),
+  child: ListTile(
+    leading: const Icon(Icons.account_circle, size: 40),
+    title: const Text("点击登录账号", style: TextStyle(fontWeight: FontWeight.bold)),
+    subtitle: const Text("登录后可同步云端数据"),
+    trailing: const Icon(Icons.chevron_right),
+    onTap: () {},
+  ),
+),
+// --- 插入结束 ---
         _WatchStatsPanel(
           bangumiCount: stats.watchedBangumiCount,
           episodeCount: stats.watchedEpisodeCount,
